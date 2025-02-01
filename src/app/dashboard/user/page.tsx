@@ -1,6 +1,6 @@
-import { DashboardHeader } from "@/components/molecules/dashboardHeader";
-import { DashboardSidebar } from "@/components/molecules/dashboardSidebar";
-import InfoCard from "@/components/molecules/infoCard";
+import { DashboardHeader } from "@/app/dashboard/components/dashboardHeader";
+import { DashboardSidebar } from "@/app/dashboard/components/dashboardSidebar";
+import InfoCard from "@/app/dashboard/components/infoCard";
 
 export default function Users() {
   return (
@@ -9,17 +9,14 @@ export default function Users() {
       <div className="flex">
         <DashboardSidebar />
         <div className="p-10 w-full flex flex-col items-center gap-10">
-            <div className="flex gap-4">
-                          <InfoCard variant="grey" title="Total User" number={238} />
-                          <InfoCard variant="grey" title="Web Visitor" number={12300} />
-                        </div>
+          <div className="flex gap-4">
+            <InfoCard variant="grey" title="Total User" number={238} />
+            <InfoCard variant="grey" title="Web Visitor" number={12300} />
+          </div>
           <div className="flex gap-5">
             <div className="border-2 rounded-full px-2 flex">
-                <input
-                  className=""
-                  placeholder="search"
-                />
-                <div>🔍</div>
+              <input className="" placeholder="search" />
+              <div>🔍</div>
             </div>
             <div className="border-2 px-2 rounded-full">Filter ▾</div>
           </div>
@@ -53,14 +50,22 @@ export default function Users() {
               <tbody>
                 <tr className="odd:bg-white even:bg-gray-100">
                   <td className="border border-gray-300 px-4 py-2">Kokomoro</td>
-                  <td className="border border-gray-300 px-4 py-2">kokomoro@moro</td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    kokomoro@moro
+                  </td>
                   <td className="border border-gray-300 px-4 py-2">02111123</td>
-                  <td className="border border-gray-300 px-4 py-2">yesterday</td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    yesterday
+                  </td>
                   <td className="border border-gray-300 px-4 py-2 text-blue-600">
                     5
                   </td>
-                  <td className="border border-gray-300 px-4 py-2 text-green-600">edit</td>
-                  <td className="border border-gray-300 px-4 py-2 text-red-600">delete</td>
+                  <td className="border border-gray-300 px-4 py-2 text-green-600">
+                    edit
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2 text-red-600">
+                    delete
+                  </td>
                 </tr>
               </tbody>
             </table>

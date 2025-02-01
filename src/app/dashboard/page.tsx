@@ -1,7 +1,7 @@
-import { DashboardHeader } from "@/components/molecules/dashboardHeader";
-import { DashboardSidebar } from "@/components/molecules/dashboardSidebar";
-import InfoCard from "@/components/molecules/infoCard";
-import { TransactionHistory } from "@/components/molecules/transactionHistory";
+import { DashboardHeader } from "@/app/dashboard/components/dashboardHeader";
+import { DashboardSidebar } from "@/app/dashboard/components/dashboardSidebar";
+import InfoCard from "@/app/dashboard/components/infoCard";
+import { TransactionHistory } from "@/app/dashboard/components/transactionHistory";
 
 export default function Home() {
   return (

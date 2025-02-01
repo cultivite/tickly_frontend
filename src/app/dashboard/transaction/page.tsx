@@ -1,7 +1,7 @@
 import Button from "@/components/atoms/button";
-import { DashboardHeader } from "@/components/molecules/dashboardHeader";
-import { DashboardSidebar } from "@/components/molecules/dashboardSidebar";
-import { TransactionHistory } from "@/components/molecules/transactionHistory";
+import { DashboardHeader } from "@/app/dashboard/components/dashboardHeader";
+import { DashboardSidebar } from "@/app/dashboard/components/dashboardSidebar";
+import { TransactionHistory } from "@/app/dashboard/components/transactionHistory";
 
 export default function Transaction() {
   return (
@@ -10,7 +10,9 @@ export default function Transaction() {
       <div className="flex">
         <DashboardSidebar />
         <div className="p-10 w-full">
-            <Button className="bg-orange-500 text-white">Manage Payment Methods</Button>
+          <Button className="bg-orange-500 text-white">
+            Manage Payment Methods
+          </Button>
           <TransactionHistory />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Button from "@/components/atoms/button";
-import { DashboardHeader } from "@/components/molecules/dashboardHeader";
-import { DashboardSidebar } from "@/components/molecules/dashboardSidebar";
-import InfoCard from "@/components/molecules/infoCard";
+import { DashboardHeader } from "@/app/dashboard/components/dashboardHeader";
+import { DashboardSidebar } from "@/app/dashboard/components/dashboardSidebar";
+import InfoCard from "@/app/dashboard/components/infoCard";
 
 export default function Event() {
   return (
@@ -14,8 +14,13 @@ export default function Event() {
             <InfoCard variant="gold" title="Ticket Sales" number={666} />
             <InfoCard variant="blue" title="Running Sales" number={8} />
           </div>
-            <Button className="bg-orange-500 text-white">Manage Ticket Category</Button>
-            <div className="font-bold text-xl">Event List</div>
+          <Button className="bg-orange-500 text-white">
+            Manage Ticket Category
+          </Button>
+          <a href="/dashboard/event/create-event">
+            <Button className="bg-blue-500 text-white">Create New Event</Button>
+          </a>
+          <div className="font-bold text-xl">Event List</div>
           <div className="flex gap-5">
             <div className="border-2 rounded-full px-2 flex">
               <input className="" placeholder="search" />
